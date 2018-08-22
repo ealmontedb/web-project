@@ -2,7 +2,18 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/*": {
+      "target": "http://localhost:5000"
+    }
+  },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",

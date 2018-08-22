@@ -9,10 +9,7 @@ import blessjpg from "./Logo Bless edited.jpg";
 import Card from "./Cards";
 
 class App extends Component {
-  state={
-     states: ["tx","ga","IL"]
-
-  }
+ 
   onChangeHandler(e){
        const v= e.target.value;
        if(e.target.checked){
@@ -61,14 +58,8 @@ class App extends Component {
             <Card src="https://images.pexels.com/photos/356148/pexels-photo-356148.jpeg?auto=compress&cs=tinysrgb&h=350"/>
          </div>
          <div>
-          <ul>
-          {this.state.states.map((s,id)=>{
-            return <li key={id}>
-              {s+' '}<input type="checkbox"  name="subscribe" value={s} onChange={this.onChangeHandler.bind(this)}/>
-            </li>}
-            )
-         }
-          </ul>
+         <a href="/login">Visit W3Schools.com!</a> 
+         <a href="/registrarse">Visit W3Schools.com!</a> 
          </div>
       </div>
       

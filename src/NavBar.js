@@ -57,6 +57,12 @@ export default class NavBar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/login">Login</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/registrarse">registrarse</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
