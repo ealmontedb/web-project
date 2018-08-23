@@ -32,11 +32,11 @@ var UserSchema = mongoose.Schema({
 	},
 	DPI:{
 		type: String,
-		require:true
+		required:true
 	},
 	email: {
 		type: String,
-		require:true
+		required:true
 	}
 });
 

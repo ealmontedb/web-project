@@ -1,21 +1,77 @@
- <form action="/registarse" method="POST">
- 
+<form action="/registarse" method="POST">
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
+  <div class="form-group">
+    <label for="uname">
+      <b>Username</b>
     </label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+  </div>
+
+  <div class="form-group"></div>
+  <label for="psw">
+    <b>Password</b>
+  </label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="rpsw">
+    <b>Retype Password</b>
+  </label>
+  <input type="password" placeholder="Retype Password" name="rpsw" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="fname">
+    <b>Nombre</b>
+  </label>
+  <input type="text" placeholder="Enter fname" name="fname" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="lname">
+    <b>Apellidos</b>
+  </label>
+  <input type="text" placeholder="Enter lname" name="lname" required>
+  </div>
+
+
+  <div class="form-group"></div>
+  <label for="address">
+    <b>direccián</b>
+  </label>
+  <input type="text" placeholder="Enter address" name="address" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="phone">
+    <b>Telefono</b>
+  </label>
+  <input type="text" placeholder="Enter phone" name="phone" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="cellphone">
+    <b>Celular</b>
+  </label>
+  <input type="text" placeholder="Enter Cellphone" name="cellphone" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="DPI">
+    <b>DPI</b>
+  </label>
+  <input type="text" placeholder="Enter DPI" name="DPI" required>
+  </div>
+  <div class="form-group"></div>
+  <label for="email">
+    <b>Email</b>
+  </label>
+  <input type="text" placeholder="Enter e-mail" name="email" required>
+  </div>
+
+  <button type="submit">Login</button>
+
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <span class="psw">Forgot
+      <a href="#">password?</a>
+    </span>
   </div>
-</form> 
+</form>

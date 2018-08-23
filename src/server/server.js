@@ -22,20 +22,7 @@ db.once('open', function() {
 
 var User = require('./models/user');
 
-var juan=new User({name:"juan",password:"1213",username:"El juand"});
 
-juan.save((e,j)=>{
-
-    if(e){
-
-        console.log(e);
-    }else{
-        console.log(j);
-
-    }
-
-
-})
 
 // Init App
 var app = express();
