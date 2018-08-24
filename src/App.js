@@ -58,8 +58,7 @@ class App extends Component {
             <Card src="https://images.pexels.com/photos/356148/pexels-photo-356148.jpeg?auto=compress&cs=tinysrgb&h=350"/>
          </div>
          <div>
-         <a href="/login">Visit W3Schools.com!</a> 
-         <a href="/registrarse">Visit W3Schools.com!</a> 
+
          </div>
       </div>
       
