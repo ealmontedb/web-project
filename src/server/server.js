@@ -56,7 +56,7 @@ app.get('/',(req,res)=>{
 
 
 app.get('/login',(req,res)=>{
-
+	req.flash('notify', 'This is a test notification.')
     res.render('home');
 
 })
@@ -67,6 +67,11 @@ app.get('/registrarse',(req,res)=>{
 
 })
 
+app.get('/users/login',(req,res)=>{
+    
+    res.render('login');
+
+})
 
 app.post('/registrarse',(req,res)=>{
     
@@ -93,7 +98,7 @@ app.post('/registrarse',(req,res)=>{
 	var errors = req.validationErrors();
 
 	if (errors) {
-		res.render('register', {
+		res.render('registrarse', {
 			errors: errors
         });
         console.log(errors);
@@ -107,7 +112,7 @@ app.post('/registrarse',(req,res)=>{
 				"$regex": "^" + email + "\\b", "$options": "i"
 		}}, function (err, mail) {
 				if (user || mail) {
-					res.render('register', {
+					res.render('registrarse', {
 						user: user,
 						mail: mail
 					});

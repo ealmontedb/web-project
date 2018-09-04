@@ -3,6 +3,13 @@
   
   </div>
   </br>
+   {{#each errors}}
+  <h5><div class="alert alert-danger">{{msg}}</div></h5>
+
+  {{/each}}
+  {{#if email}}
+   <h5><div class="alert alert-danger">email ya utilizado </div></h5>
+  {{/if}}
 <form action="/registrarse" method="POST"   style="width:50%;margin-left:30%">
     <span style="color:blue;font-size:20px">Por favor complete la registración</span>
 
