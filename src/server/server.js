@@ -68,8 +68,8 @@ app.get('/registrarse',(req,res)=>{
 })
 
 app.get('/users/login',(req,res)=>{
-    
-    res.render('login');
+	console.log(req.flash('success_msg'));
+    res.render('login',{test: req.flash('success_msg')});
 
 })
 
